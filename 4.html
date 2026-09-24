@@ -1,0 +1,96 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Tablas en HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;            
+            padding: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <style>
+        #tabla2 {
+            border-collapse: collapse;
+            width: 100%;
+            padding: 15px;
+            background-color: dodgerblue;
+        }
+        #tabla2 th, #tabla2 td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #tabla2 th {
+            background-color: #e6f2ff;
+        }
+        #tabla2 tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #tabla2 tr:nth-child(odd) {
+            background-color: cornflowerblue;
+        }
+        #tabla2 th {
+            background-color: #1e90ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>        
+            <td>Juan</td>
+            <td>Perez</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Gonzalez</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Lopez</td>
+            <td>40</td>
+        </tr>
+    </table>
+    <table id="tabla2">
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+        </tr>        
+            <td>Manzanas</td>
+            <td>$1.50</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Naranjas</td>
+            <td>$2.00</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Plátanos</td>
+            <td>$0.75</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Uvas</td>
+            <td>$3.00</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+</html>
