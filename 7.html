@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Formularios</title>
+<body>    
+    <h1>Ejercicio 6 - Formularios con varios atributos</h1>
+    <h2>Atributos de los elementos del formulario de solo lectura</h2>
+
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" readonly><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" readonly><br><br>
+        
+        <input type="submit" value="Enviar Datos">
+    </form>
+    <hr>
+
+    <h2>Deshabilitar campo</h2>
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" disabled><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" disabled><br><br>
+        
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Asignar valor por defecto</h2>
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="Juan"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" disabled><br><br>
+        
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Cambiar el tamaño del campo</h2>
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" size="50"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" size="100"><br><br>
+        
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Establecer valores máximos y mínimos para los inputs</h2>
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="10"><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" minlength="2" maxlength="5"><br><br>
+        
+        <input type="submit" value="Enviar Datos">
+    </form>
+    <hr>
+
+    <h2>Fechas</h2>
+    <form action="procesar_formulario.php" method="post">
+
+        <label for="fecha1">Fecha 1:</label>
+        <input type="date" id="datemax" name="datemax" max="1990-01-01"><br><br>
+
+        <label for="fecha2">Fecha 2:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-01"><br><br>
+
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" name="numero" min="1" max="5"><br><br>
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+    
+    <h2>Subir Archivo</h2>
+    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+
+        <label for="archivo">Seleccionar Archivo:</label>
+        <input type="file" id="archivo" name="archivo" multiple><br><br>
+
+        <input type="submit" value="Enviar Archivo">
+    </form>
+
+    <hr>
+
+    <h2>Patrón de Entrada</h2>
+    <form>
+
+        <label for="siglas">Archivos alfabéticos:</label>
+        <input type="text" id="siglas" name="siglas" pattern="[a-zA-Z]{3}" title="Ingrese solamente 3 letras"><br><br>
+
+        <label for="telefono">Número de Celular:</label>
+        <input type="text" id="telefono" name="telefono" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0000-000-000"><br><br>
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Campo de Entrada Obligatorio y Foco</h2>
+    <form>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" autofocus><br><br>
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Listas</h2>
+    <form>
+        <label for="navegadores">Navegadores:</label>
+        <input list="navegadores">
+        <datalist id="navegadores">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+
+    <h2>Autocompletar</h2>
+    <form>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" autocomplete="on">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" autocomplete="on">
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+</body>
+</html>
