@@ -1,0 +1,36 @@
+/* Llamar a css desde un archivo */
+
+/* Agregar fuentes externas. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tangerine:wght@400;700&display=swap');
+/* Agregar fuentes internas dentro del proyecto. */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Regular.ttf') format('truetype');
+}
+
+/* Estilos generales de las etiquetas */
+h1 {
+    text-align: center; /* Sirve para centrar el texto */
+    color: blue; /* Sirve para cambiar el color del texto */
+    text-align: center;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Sirve para cambiar la fuente del texto */
+    font-family: Tangerine, cursive;
+    text-decoration: underline;
+    background-color: burlywood;
+}
+
+a {
+    color: chartereuse;
+    background-color: crimson;
+}
+
+p {
+    color: darkblue;
+    background-color: darkgray;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'Roboto-Regular'; /* Utilizar una fuente interna */
+}
+
+body {
+    background-color: darkorange;
+}
