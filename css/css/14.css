@@ -1,0 +1,48 @@
+/* Pseudo clases */
+/*
+link
+visited
+active
+hover
+focus
+*/
+
+.link:link {
+    color: red;
+}
+
+.link:visited {
+    color: yellowgreen;
+}
+
+.link:active {
+    color: violet;
+    background: tomato;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    background: red;
+    padding: .5em;
+    border-radius: 12px;
+    color: aqua;
+}
+
+.button:active {
+    transform: scale(.9);
+}
+
+.button:hover {
+    color: darkgoldenrod;
+    background-color: blue;
+    border: 1px solid darkgoldenrod;
+}
+
+.input:focus {
+    background-color: grey;
+}
+
+.parrafo {
+    margin-top: 500px;
+}
