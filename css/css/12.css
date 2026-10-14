@@ -1,0 +1,12 @@
+/* Posicion Z-Index */
+
+.inline {
+    background: darkgreen;
+    margin-right: 3em;
+    display: block;
+}
+
+.block {
+    background: darkblue;
+    display: inline;
+}
